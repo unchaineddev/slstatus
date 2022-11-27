@@ -68,9 +68,9 @@ static const struct arg args[] = {
 	{ battery_state,    "[%s",             "BAT0"  },
 	{ battery_perc,     "  %s%%] ",		    "BAT0"	},
 	{ wifi_essid,       "[  %s ",           "wlp3s0" },
-	{ netspeed_rx,	    "%sB/s | ",		        "wlp3s0" },
-	{ netspeed_tx,      "%sB/s] " ,		    "wlp3s0" },
+	{ netspeed_rx,	    "%sB/s | ",		        "wlp3s0" },
+	{ netspeed_tx,      "%sB/s] " ,		    "wlp3s0" },
 	{ cpu_perc,"[ CPU:%s%% ] ", NULL},
 	{ ram_perc,"[ RAM:%s%% ] ", NULL},
-	{ datetime,"[Time: %s]", "%F %T" },
+	{ datetime,"[ Time: %s]", "%F %T" },
 };
