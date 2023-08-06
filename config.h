@@ -65,15 +65,15 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ netspeed_rx,	    "^c#56B6C2^ [ %.2sK/s |",		        "wlp3s0" },
-	{ netspeed_tx,      "^c#E5C07b^ %.2sK/s]" ,		    "wlp3s0" },
-	{ wifi_essid,       "^c#98C379^ [Wifi   %s]",           "wlp3s0" },
-	{ battery_perc,     "^c#C678DD^ [  %s%%",		    "BAT0"	},
-	{ battery_state,    "%s] ",             "BAT0"  },
-	{ run_command,		"^c#61AF6F^ [Aud  %4s]", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-	{ cpu_perc,			"^c#E06C75^ [CPU  %s%%]", NULL},
-	{ ram_perc,			"^c#E5C07B^ [RAM  %s%%]", NULL},
-	{ datetime,			"^c#56B6C2^ [Time   %s]", "%F %T" },
+	{ netspeed_rx,	    "^c#FFFF00^ [ %.2sK/s |",     "wlp3s0" },
+	{ netspeed_tx,      "^c#FFFF00^ %.2sK/s]" ,	   "wlp3s0" },
+	{ wifi_essid,       "^c#009900^ [Wifi   %s]",     "wlp3s0" },
+	{ battery_perc,     "^c#C678DD^ [  %s%%",	   "BAT0"   },
+	{ battery_state,    "%s]",                         "BAT0"  },
+	{ run_command,	    "^c#61AF6F^ [Aud  %4s]",      "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+	{ cpu_perc,	    "^c#E06C75^ [CPU  %s%%]",     NULL},
+	{ ram_perc,	    "^c#E5C07B^ [RAM  %s%%]",     NULL},
+        { datetime,	    "^c#56B6C2^ [Time   %s]",     "%H:%M" },
 };
 
 
